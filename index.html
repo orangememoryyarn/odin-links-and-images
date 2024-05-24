@@ -1,0 +1,40 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Links and Images</title>
+    </head>
+
+    <body>
+        <h1>Homepage</h1>
+        <!-- Links that open in the same tab -->
+        <a href="https://www.theodinproject.com/about"
+            >About the Odin Project</a
+        >
+
+        <br />
+
+        <!-- Links that open in a new tab -->
+        <a href="https://www.theodinproject.com/about" target="_blank"
+            >About the Odin Project</a
+        >
+
+        <br />
+
+        <!-- A series of safety measures -->
+        <a
+            href="https://www.theodinproject.com/about"
+            target="_blank"
+            rel="noopener noreferrer"
+            >About the Odin Project</a
+        >
+        <!-- noopener = prevents the opened link from getting access to the webpage from which it was opened -->
+        <!-- without a noopener -> phishing attacks like tabnabbing (where the opened link changes the webpage that linked to it to a different one) can occur -->
+
+        <!-- noreferrer = prevents the opened link from knowing which webpage or resource had the link (or 'reference') to it -->
+        <!-- the noreferrer tag includes the noopener behavior within it, so noopener noreferrer is really the same thing as just writing noreferrer -->
+
+        <!-- Recent browsers provide these securities by default, but it's important to get into the habit of writing them out in case the url is clicked on an older browser -->
+    </body>
+</html>
