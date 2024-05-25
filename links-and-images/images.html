@@ -1,0 +1,101 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Images</title>
+    </head>
+    <body>
+        <h1>Images</h1>
+        <p>
+            This page covers common image formats, but you may also be looking
+            for <a href="links.html">links</a> and
+            <a href="misc/extras.html">useful extras</a>
+        </p>
+
+        <h2>JPGs</h2>
+
+        <p>JPG images are good for photos</p>
+        <ul>
+            <li>
+                JPG images are designed for handling large color palettes
+                without exorbitantly increasing file size
+            </li>
+            <li>
+                This makes them great for photos and images with lots of
+                gradients
+            </li>
+            <li>They <em>can't</em> have transparent pixels, though.</li>
+        </ul>
+        <img src="images/mochi.jpg" alt="mochi jpg" />
+
+        <h2>GIFs</h2>
+
+        <p>GIFs are good for animations</p>
+        <ul>
+            <li>
+                GIFs are good for simple animations, but they have a limited
+                color palette (<em>don't</em> use them for photos)
+            </li>
+            <li>
+                Transparent pixels are also binary (either transparent or
+                non-transparent), which means you can't have semi-opaque pixels
+            </li>
+            <li>Use a PNG if you don't need the image to be animated.</li>
+        </ul>
+        <img src="images/mochi.gif" alt="mochi bouncing gif" />
+
+        <h2>PNGs</h2>
+
+        <p>PNGs are good for diagrams and icons</p>
+        <ul>
+            <li>PNGs are great for anything that's not a photo or animated</li>
+            <li>
+                A PNG of the same quality (as perceived by the human eye) is
+                generally larger than an equivalent JPG file
+            </li>
+            <li>
+                They handle opacity and transparency well, and don't have color
+                palette limitations - making them excellent for icons, technical
+                diagrams, logos, etc.
+            </li>
+        </ul>
+        <img
+            src="images/mochi.png"
+            alt="mochi png with transparent background"
+        />
+
+        <h2>SVGs</h2>
+
+        <p>SVGs are <em>amazing</em>. Use them wherever you can</p>
+        <ul>
+            <li>
+                SVGs are a <em>vector-based</em> graphics format, which means
+                that they can scale to <em>any</em> dimension without a loss of
+                quality
+            </li>
+            <li>
+                This maeks them great for
+                <a
+                    href="https://internetingishard.netlify.app/html-and-css/responsive-design/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >responsive design</a
+                >
+            </li>
+            <li>They do everything PNGs do, but better.</li>
+        </ul>
+
+        <img
+            src="images/mochi.svg"
+            alt="svg of mochi"
+            width="200"
+            height="200"
+        />
+        <p>
+            The only disadvantage of svgs is that text fields need to be
+            converted to outlines w/ Adobe Illustrator / Sketch. This
+            significantly increases the file sizes of images with lots of text
+        </p>
+    </body>
+</html>
