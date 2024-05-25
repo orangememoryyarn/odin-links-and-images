@@ -8,6 +8,8 @@
 
     <body>
         <h1>Homepage</h1>
+        <h3>Opening links in a new tab</h3>
+
         <!-- Links that open in the same tab -->
         <a href="https://www.theodinproject.com/about"
             >About the Odin Project</a
@@ -36,5 +38,27 @@
         <!-- the noreferrer tag includes the noopener behavior within it, so noopener noreferrer is really the same thing as just writing noreferrer -->
 
         <!-- Recent browsers provide these securities by default, but it's important to get into the habit of writing them out in case the url is clicked on an older browser -->
+
+        <h3>Absolute and relative links</h3>
+        <a
+            href="https://www.theodinproject.com/about"
+            target="_blank"
+            rel="noopener noreferrer"
+            >About The Odin Project</a
+        >
+        <!-- Typing ./ indicates that the code should start looking for the file RELATIVE to the CURRENT DIRECTORY -->
+        <a href="./pages/about.html">About</a>
+
+        <!-- Images -->
+        <h3>Images</h3>
+        <img src="https://www.theodinproject.com/mstile-310x310.png" />
+
+        <!-- Alt text and size-->
+        <img
+            src="https://www.theodinproject.com/mstile-310x310.png"
+            alt="The Odin Project Logo"
+            height="310"
+            width="310"
+        />
     </body>
 </html>
